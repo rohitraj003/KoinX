@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 
-const apiKey = "CG-foLf1zMjneEHrFqUH15F33L8";
+const apiKey = process.env.apiKey;
 
 
 export const getData = async(req,res) => {
