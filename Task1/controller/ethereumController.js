@@ -1,7 +1,7 @@
 import ethereumData from "../model/ethereumModel.js";
 import fetch from "node-fetch";
 
-const apiKey = "CG-foLf1zMjneEHrFqUH15F33L8";
+
 const ethereum_url = `https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd&include_market_cap=true&include_24hr_change=true&x_cg_demo_api_key=${apiKey}`;
 
 export const addethereumData = async(req,res) => {
