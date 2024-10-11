@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import maticData from "../model/maticModel.js"
 
-const apiKey = "CG-foLf1zMjneEHrFqUH15F33L8";
+const apiKey = process.env.apiKey;
 const matic_url = `https://api.coingecko.com/api/v3/simple/price?ids=matic-network&vs_currencies=usd&include_market_cap=true&include_24hr_change=true&x_cg_demo_api_key=${apiKey}`;
 
 export const addmaticData = async(req,res) => {
